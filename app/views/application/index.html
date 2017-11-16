@@ -1,0 +1,24 @@
+<body ng-app="nameSearch" ng-controller="NameSearchController">
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <div id="container">
+    <div id="header">
+    <h1>Welcome to Brenda's name searcher :)</h1>
+  </div>
+		<div class="bar">
+			<input type="text" name="search" ng-model="filterText" placeholder="Search name" />
+		</div>
+
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="n in elements | filterName:filterText">
+				{{n.name}}
+			</li>
+		</ul>
+  </div>
+</body>

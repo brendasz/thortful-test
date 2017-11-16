@@ -1,0 +1,31 @@
+#container {background:azure;
+            font-family:verdana;
+            border-style:solid;
+            width:100%;
+            margin: 0 auto;
+            border-color:#9E9EAE;
+            }
+
+#header {background:#FFF;
+         padding:5px;}
+
+#header h1 {margin-top:30px;
+            color:purple;
+            font-size: 20px;
+            text-align:center;}
+
+ul {
+       color:#008F6B;
+       text-align: center;}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 50px;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
